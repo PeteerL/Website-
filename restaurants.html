@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Restaurant Reviews Logo" class="logo" width="100" height="100">
+        <div class="top-nav">
+            <div class="account-menu">
+                <a href="account.html">Account</a>
+                <a href="register.html">Register</a>
+                <a href="login.html">Login</a>
+            </div>
+        </div>
+        <h1>Restaurante</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="restaurants.html">Restaurante</a></li>
+            <li><a href="add_review.html">Adaugă Recenzie</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Lista Restaurantelor</h2>
+        <input type="text" id="search" placeholder="Căutați un restaurant...">
+        <button id="searchBtn">Căutare</button>
+        <select id="filterRating">
+            <option value="">Toate rating-urile</option>
+            <option value="1">1 Stea</option>
+            <option value="2">2 Stele</option>
+            <option value="3">3 Stele</option>
+            <option value="4">4 Stele</option>
+            <option value="5">5 Stele</option>
+        </select>
+        <select id="filterLocation">
+            <option value="">Toate locațiile</option>
+            <!-- Adăugați locațiile relevante aici -->
+            <option value="bucuresti">București</option>
+            <option value="iasi">Iași</option>
+            <option value="cluj-napoca">Cluj-Napoca</option>
+            <!-- etc. -->
+        </select>
+        <table id="restaurantsTable">
+            <thead>
+                <tr>
+                    <th>Nume</th>
+                    <th>Rating</th>
+                    <th>Locație</th>
+                </tr>
+            </thead>
+            <tbody id="restaurant-list">
+                <!-- Datele vor fi populate din baza de date -->
+            </tbody>
+        </table>
+    </main>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

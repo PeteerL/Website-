@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Restaurant Reviews Logo" class="logo" width="100" height="100">
+        <h1>Logout</h1>
+    </header>
+    <main>
+        <?php if (isset($_GET['message'])): ?>
+            <p class="message"><?php echo htmlspecialchars($_GET['message']); ?></p>
+        <?php endif; ?>
+        <a href="login.html">Login again</a>
+    </main>
+</body>
+</html>
