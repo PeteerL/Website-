@@ -1,0 +1,14 @@
+@media (max-width: 600px) {
+    nav ul {
+        text-align: center;
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    header, footer {
+        text-align: center;
+    }
+}
